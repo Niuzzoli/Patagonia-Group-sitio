@@ -1,0 +1,98 @@
+---
+
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/components/header.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container">
+        <div class="titulo">
+            <h1>Patagonia Group</h1>
+        </div>
+        <div class="logo">
+            <a href="/">
+                <img id="compu" src="/logos/logo.png" alt="Logo">
+                <img id="celu" src="/logos/logo-celu.png" alt="Logo">
+            </a>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/about">Quienes Somos</a></li>
+                    <li><a href="#">Que Hacemos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <style>
+        
+        header{
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        /* background-color: rgb(10, 9, 85); */
+        background-color: rgb(255, 255, 255);
+        }
+
+        header .titulo h1{
+            color: rgb(10, 9, 85);
+            line-height: 90px;
+            display: flex;
+            margin: 0 0 0 10px;
+        }
+
+        header .logo img{
+            height: 4.5rem;
+            width: auto;
+            margin: 1rem 0 0 8rem;
+            display: flex;
+        }
+
+        header .logo #celu{
+            display: none;
+        }
+
+        header ul li{
+            list-style: none;
+            display: inline;
+            line-height: 90px;
+            padding: 5px;
+            margin: 10px;
+            font-size: 20px;
+        }
+
+        header ul li a{
+            /* color: rgba(255, 255, 255, 0.600); */
+            color: rgb(10, 9, 85);
+            text-decoration: none;
+        }
+
+        @media (max-width: 1077px) {
+
+        header .titulo h1, header ul li{ 
+            display: none;
+        }
+
+        header .logo img{
+            margin-left: 3rem;
+            display: none;
+        }
+
+        header .logo #celu{
+            display: flex;
+        }
+
+        }
+    </style>
+</body>
+</html>

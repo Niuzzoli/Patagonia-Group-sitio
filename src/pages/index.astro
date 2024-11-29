@@ -1,16 +1,72 @@
 ---
-
+import Header from "../components/header.astro"
+import Footer from "../components/footer.astro"
+import Cartas from "../components/cartas.astro"
+import VacaMuerta from "../components/vaca-muerta.astro"
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/x-icon" href="/public/logos/favicon.jpg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Patagonia Gruop</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<Header />
+
+		<div class="container">
+			<h1>DEJANOS RESOLVER TU PROBLEMA...</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quod enim quia, laborum, sit totam earum ratione vero praesentium, consequuntur nostrum unde mollitia velit aliquam fugit aut. Quae, debitis a.</p>
+			<a href="/">Contactanos</a><br>
+			<img src="/public/index/inicio.png" alt="">
+		</div>
+
+		<Cartas/>
+
+		<VacaMuerta />
+
+		
+		
+		<Footer />
 	</body>
+
+	<style>
+		.container{
+			text-align: center;
+			padding: 4rem 0 3rem 0;
+			max-width: 1000px;
+		}
+
+		.container h1{
+			margin: 0 0 20px 0;
+		}
+
+		.container p{
+			margin: 0 0 50px 0;
+		}
+
+		.container a{
+			background-color: rgb(0, 100, 0);
+			margin: 10000px 0;
+			padding: 15px 20px;
+			border-radius: 30px;
+			text-decoration: none;
+			color: white;
+			font-weight: 500;
+			transition: 0.2s ease-in;
+		}
+
+		.container img{
+			width: 35rem;
+			height: auto;
+			object-fit: contain;
+			margin: 80px 0;
+		}
+
+		.container a:hover{
+			padding: 19px 24px;
+		}
+	</style>
 </html>

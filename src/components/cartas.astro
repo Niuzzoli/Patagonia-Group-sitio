@@ -1,0 +1,90 @@
+---
+const {title, img} = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+
+        
+        <h2>Los Servicios Que Ofrecemos</h2>
+        <div class="box-1 container">
+            <div class="box-2">
+                <img src="/public/logos/logo-logistic.png" alt="cartas">
+                <div class="box-3">
+                    <h5>Housing & Logistic</h5>
+                    <p>Servicios de limpieza para hoteles, complejos habitacionales, empresas o campamentos, seguridad y servicio gastronómico.</p>
+                </div>
+            </div>
+            <div class="box-2">
+                <img src="/public/logos/logo-constr.png" alt="cartas">
+                <div class="box-3">
+                    <h5>Construcciones</h5>
+                    <p>Poseemos un equipo experimentado listo para trabajar. Actualmente tenemos tres obras particulares en curso.</p>
+                </div>
+            </div>
+            <div class="box-2">
+                <img src="/public/logos/logo-inmo.png" alt="cartas">
+                <div class="box-3">
+                    <h5>Servicios Inmobiliarios</h5>
+                    <p>Actualmente poseemos 10 propiedades listas para ser vendidas.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <style>
+        section{
+            padding: 50px 0px;
+            background-color: rgba(113, 113, 122, 0.150);
+        }
+
+        h2{
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .box-1{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;    
+        }
+
+        .box-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 10px;
+            min-width: 23rem;
+            max-width: 23rem;
+            margin: 10px 30px;
+            background-color: white;
+            border-radius: 1rem;
+            transition: 0.2s all;
+        }
+
+        div .box-2 img{
+            width: 100px;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .box-3{
+            line-height: 25px;
+        }
+
+
+    </style>
+
+
+</body>
+</html>
