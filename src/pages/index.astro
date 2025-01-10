@@ -18,8 +18,8 @@ import VacaMuerta from "../components/vaca-muerta.astro"
 
 		<div class="container">
 			<h1>DEJANOS RESOLVER TU PROBLEMA...</h1>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quod enim quia, laborum, sit totam earum ratione vero praesentium, consequuntur nostrum unde mollitia velit aliquam fugit aut. Quae, debitis a.</p>
-			<a href="/">Contactanos</a><br>
+			<p>Somos un conjunto de 3 empresas que se encarga de contruir, alquilar y darle servicio a avitaciones en distintas zonas de Vaca Muerta.</p>
+			<a href="/contacto">Contactanos</a><br>
 			<img src="/public/index/inicio.png" alt="">
 		</div>
 
@@ -30,6 +30,7 @@ import VacaMuerta from "../components/vaca-muerta.astro"
 		
 		
 		<Footer />
+		<div id="footer"></div>
 	</body>
 
 	<style>
@@ -38,6 +39,7 @@ import VacaMuerta from "../components/vaca-muerta.astro"
 			padding: 4rem 0 3rem 0;
 			max-width: 1000px;
 		}
+
 
 		.container h1{
 			margin: 0 0 20px 0;
@@ -67,6 +69,13 @@ import VacaMuerta from "../components/vaca-muerta.astro"
 
 		.container a:hover{
 			padding: 19px 24px;
+		}
+
+		@media (max-width: 715px) {
+			.container img{
+				width: 20rem;
+				height: auto;
+			}
 		}
 	</style>
 </html>

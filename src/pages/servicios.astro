@@ -1,0 +1,143 @@
+---
+import Header from "../components/header.astro"
+import Footer from "../components/footer.astro"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="public/logos/favicon.jpg" type="image/x-icon">
+    <title>Patagonia Group - Servicios</title>
+</head>
+<body>
+    <style>
+        .hero {
+            background: url("public/servicios/presentacion.jpg") no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        h2{
+            border: solid;
+            border-width: 0 0 3px 0;
+            border-color: rgb(10, 9, 85);
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+        .services, .properties {
+            margin: 3rem 0 6rem 0;
+        }
+        .services h2, .properties h2 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .service-item, .property-item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1em;
+        }
+        .service-item img, .property-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 1em;
+        }
+        .service-item div, .property-item div {
+            flex: 1;
+        }
+        .service-item h3, .property-item h3 {
+            margin: 0 0 0.5em 0;
+        }
+        .service-item p, .property-item p {
+            margin: 0;
+        }
+        @media (min-width: 768px) {
+            .service-item, .property-item {
+                flex-direction: row;
+            }
+            .service-item img, .property-item img {
+                width: 25%;
+                height: auto;
+                margin-right: 1em;
+                margin-bottom: 0;
+            }
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <Header/>
+
+    <div class="hero">
+        <h1>Bienvenidos a Nuestra Empresa</h1>
+    </div>
+    <div class="container">
+        <section class="services">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-item">
+                <img src="https://storage.googleapis.com/a1aa/image/1feIsUFf7KBh3ogggXftGGXb3iWFCCFKxEhlcAUe0Fe4sLu9E.jpg" alt="Imagen de un servicio de alquiler de inmuebles">
+                <div>
+                    <h3>Alquiler de Inmuebles</h3>
+                    <p>Esta unidad de negocio es joven y actualmente tenemos cargadas 10 propiedades a la venta, detallo algunos links para su visualización. Nuestra visión es posicionarnos en las áreas petroleras y cuenca neuquina para el desarrollo de emprendimientos y complejos habitacionales sin descuidar el propio desarrollo inmobiliario de nuestra ciudad en crecimiento constante.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="https://storage.googleapis.com/a1aa/image/fv386BkZPuzSUKRIppiFybEiNsZweAKFcfTeOKsVfZSR2F3eE.jpg" alt="Imagen de un servicio de mantenimiento de propiedades">
+                <div>
+                    <h3>Mantenimiento de Propiedades</h3>
+                    <p>Realizamos servicios de Limpieza para Hoteles, Complejos Habitacionales, Empresas o Campamentos, Seguridad y servicio Gastronómico. Algunos de nuestros Clientes actuales Zille SRL, Servipet S.R.L, Techint S.A, Techfinance SAS, Tecpetrol S.A, Condominio las Coloradas, Compricass SRL, Los Crespines S.A, Altos de Añelo, Complejo Sur A y B. Estamos en Añelo hace casi tres años.</p>        
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="public/logos/logo-inmo.png" alt="Imagen de un servicio de asesoría inmobiliaria">
+                <div>
+                    <h3>Asesoría Inmobiliaria</h3>
+                    <p>Estamos en la zona hace dos años y nuestro equipo está formado por un Arquitecto en formación, un M.M.O experimentado con más de 25 años de experiencia, una Contadora, un Ing. Industrial, equipo operativo y un área comercial, actualmente tenemos tres obras particulares en ejecución, en Plottier obra llave en mano de 98m2, en Neuquén llave en mano obra de 55m2, en San Patricio del Chañar remodelación a complejo habitacional con tres Departamentos de dos habitaciones en suite, obra de 187m2. Está en proceso de constitución el contrato societario. Actualmente tenemos una alianza estratégica con una empresa Vial con más de 80 equipos, desde modelos 2014 en adelante.</p>
+                </div>
+            </div>
+        </section>
+        <section class="properties">
+            <h2>Nuestras Propiedades</h2>
+            <div class="property-item">
+                <img src="https://storage.googleapis.com/a1aa/image/VgbKjQ10XnJGOlMWX1ZYM0WeydrbWXNQWArs0JRRncPaXc7JA.jpg" alt="Imagen de una propiedad en alquiler">
+                <div>
+                    <h3>Propiedad 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae odio vehicula fermentum.</p>
+                </div>
+            </div>
+            <div class="property-item">
+                <img src="https://storage.googleapis.com/a1aa/image/VgbKjQ10XnJGOlMWX1ZYM0WeydrbWXNQWArs0JRRncPaXc7JA.jpg" alt="Imagen de una propiedad en alquiler">
+                <div>
+                    <h3>Propiedad 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae odio vehicula fermentum.</p>
+                </div>
+            </div>
+            <div class="property-item">
+                <img src="https://storage.googleapis.com/a1aa/image/VgbKjQ10XnJGOlMWX1ZYM0WeydrbWXNQWArs0JRRncPaXc7JA.jpg" alt="Imagen de una propiedad en alquiler">
+                <div>
+                    <h3>Propiedad 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae odio vehicula fermentum.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    <Footer/>    
+</body>
+</html>

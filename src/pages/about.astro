@@ -17,9 +17,161 @@ import Footer from "../components/footer.astro"
 
 
 
+    <div class="container">
+        <section class="about-section">
+         <h2>
+          Sobre Nosotros
+         </h2>
+         <div class="about-content">
+          <img alt="Imagen de la oficina de la empresa con empleados trabajando en sus escritorios" height="300" src="https://storage.googleapis.com/a1aa/image/AJseTNyNN3yYQCOeM8RrN8cZuRBspe7pVkFIEHrif5IYojXPB.jpg" width="400"/>
+          <div class="about-text">
+           <p>
+            Somos un Grupo conformado por 3 Empresas especializadas en la Unidad de Negocios que cada una de ellas gestiona; Patagonia Housing & Logistic, Patagonia Itacurbi Contrucciones y Patagonia Housing Servicios inmobiliarios.
+           </p>
+           <p>
+            Nuestro objetivo de compartir esta información es encontrar la sinergia entre los interesados para poder optimizar los costos y mejorar la rentabilidad de la Inversión, encontrando un punto de mutua conveniencia que nos permita ser competitivos ante otras opciones del Mercado, aprovechando un nicho de oportunidades que hoy representa el desarrollo de Vaca Muerta y, eventualmente, explorar otras actividades/negocios.
+            </p>
+            <p>
+            La responsabilidad de Administración y Comercialización quedará en manos de Patagonia Group por Plazo a convenir.
+            </p>
+          </div>
+         </div>
+        </section>
+        <section class="team-section">
+         <h2>
+          Conoce a Nuestro Equipo
+         </h2>
+         <div class="team-members">
+          <div class="team-member">
+           <img alt="Retrato de un hombre sonriente con traje y moño" height="100" src="public/sinfoto.jpg" width="100"/>
+           <h3>
+            Juan Pérez
+           </h3>
+           <p>
+            CEO
+           </p>
+          </div>
+          <div class="team-member">
+           <img alt="Retrato de una mujer sonriente con blusa formal" height="100" src="https://storage.googleapis.com/a1aa/image/AAU2gV1cNvqkGhGDikueVzHfb4eaVT0ZWj9jXWdW6ypR0xrnA.jpg" width="100"/>
+           <h3>
+            María López
+           </h3>
+           <p>
+            Directora de Marketing
+           </p>
+          </div>
+          <div class="team-member">
+           <img alt="Retrato de un hombre joven con camisa casual" height="100" src="https://storage.googleapis.com/a1aa/image/x0wyeQYAE5UwfkX2TAcYXUgyEkCQLtGqmdyT5crI4NcC641TA.jpg" width="100"/>
+           <h3>
+            Carlos García
+           </h3>
+           <p>
+            Desarrollador Principal
+           </p>
+          </div>
+          <div class="team-member">
+           <img alt="Retrato de una mujer joven con vestido profesional" height="100" src="https://storage.googleapis.com/a1aa/image/9OadCaVeOZ0uAKnbzKf3eRoDJepn0TYxfo2n42TGFx6mQHveE.jpg" width="100"/>
+           <h3>
+            Ana Martínez
+           </h3>
+           <p>
+            Gerente de Proyectos
+           </p>
+          </div>
+          <div class="team-member">
+           <img alt="Retrato de un hombre con gafas y camisa formal" height="100" src="https://storage.googleapis.com/a1aa/image/zHZi9RZzoApuABQnai814OwrWISaBXwdxIweife6bIjX0xrnA.jpg" width="100"/>
+           <h3>
+            Pedro Sánchez
+           </h3>
+           <p>
+            Analista de Datos
+           </p>
+          </div>
+         </div>
+        </section>
+       </div>
 
 
+       <style>
 
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+        .about-section {
+            background-color: #fff;
+            padding: 2em;
+            margin-bottom: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .about-section h2 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .about-content img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .about-text {
+            flex: 1;
+            margin-left: 2em;
+        }
+        .team-section {
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .team-section h2 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 2em;
+            flex: 1 1 30%;
+            max-width: 30%;
+        }
+        .team-member img {
+            border-radius: 50%;
+            max-width: 150px;
+            margin-bottom: 1em;
+        }
+        .team-member h3 {
+            margin-bottom: 0.5em;
+        }
+        .team-member p {
+            color: #666;
+        }
+       
+
+        @media (max-width: 1076px) {
+        .about-content {
+            flex-direction: column; 
+            align-items: center;   
+        }
+        .about-text {
+            margin-left: 0;       
+            margin-top: 1em;      
+        }
+        .about-content img {
+            margin-bottom: 1em;  
+        }
+    }
+       
+       </style>
 
 
 
